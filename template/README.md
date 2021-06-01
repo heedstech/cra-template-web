@@ -12,10 +12,12 @@ First add this to your devDependencies in package.json:
   "@types/jest": "^25.1.4",
   "@types/react-dom": "^16.9.8",
   "@types/react-redux": "^7.1.9",
+  "@types/styled-components": "^5.1.9",
   "eslint-config-prettier": "^6.11.0",
+  "eslint-plugin-prettier": "^3.4.0",
   "eslint-plugin-react": "^7.20.0",
   "prettier": "^2.2.1",
-  "husky": "^4.2.5",
+  "husky": "^6.0.0"
 }
 ```
 
