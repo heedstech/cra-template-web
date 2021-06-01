@@ -1,0 +1,26 @@
+{
+  "name": "cra-template-heeds-web",
+  "version": "1.0.0",
+  "description": "Heeds template for web applications for Create React App",
+  "main": "template.json",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heedstech/cra-template-web.git"
+  },
+  "keywords": [
+    "create-react-app",
+    "template",
+    "heeds",
+    "typescript",
+    "react"
+  ],
+  "author": "Pah Ferreira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/heedstech/cra-template-web/issues"
+  },
+  "homepage": "https://github.com/heedstech/cra-template-web#readme"
+}
