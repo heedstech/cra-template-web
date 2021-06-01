@@ -1,5 +1,5 @@
 // Models
-import TRoute from '../types/router'
+import { Route as TRoute } from 'lib/models'
 
 // React
 import React, { FC } from 'react'
