@@ -1,6 +1,7 @@
 // Libraries
 import { applyMiddleware, compose, createStore } from 'redux'
 import createSagaMiddleware, { SagaMiddleware } from 'redux-saga'
+import IStore, { IAction } from './models'
 
 // Custom
 import appReducer from './reducers'
@@ -17,9 +18,9 @@ const sagaMiddleware: SagaMiddleware = createSagaMiddleware()
 const composeEnhancers: typeof compose =
   window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
 
-const store = createStore<any, any, any, any>(
+const store = createStore<IStore, IAction, unknown, unknown>(
   appReducer,
-  composeEnhancers(applyMiddleware(sagaMiddleware))
+  composeEnhancers(applyMiddleware(sagaMiddleware)),
 )
 
 sagaMiddleware.run(sagas)

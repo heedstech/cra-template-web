@@ -1,15 +1,11 @@
 // React
-import React, { FC } from 'react'
+import { FC } from 'react'
 
 // Custom
 import { Container } from './styled'
 
 const Home: FC = () => {
-  return (
-    <Container>
-      Welcome to Homepage!
-    </Container>
-  )
+  return <Container>Welcome to Homepage!</Container>
 }
 
 export default Home

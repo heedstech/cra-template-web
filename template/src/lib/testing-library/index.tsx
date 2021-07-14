@@ -1,5 +1,5 @@
 // React & React Native
-import React, { ComponentType, FC, ReactElement } from 'react'
+import { ComponentType, FC, ReactElement } from 'react'
 
 // Libraries
 import { RenderResult, RenderOptions, render } from '@testing-library/react'
