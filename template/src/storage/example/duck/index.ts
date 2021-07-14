@@ -22,7 +22,7 @@ export default (
     case Types.FAILURE:
       return {
         ...state,
-        error: action.payload,
+        error: action.payload as string,
       }
     case Types.FULFILL:
       return {
@@ -37,7 +37,7 @@ export default (
     case Types.SUCCESS:
       return {
         ...state,
-        ...action?.payload,
+        ...(action?.payload as IExampleState),
       }
     default:
       return state
@@ -46,26 +46,26 @@ export default (
 
 // ACTIONS
 
-export const failure = (payload: string) => {
+export const failure = (payload: string): IAction => {
   return {
     type: Types.FAILURE,
     payload,
   }
 }
 
-export const fulfill = () => {
+export const fulfill = (): IAction => {
   return {
     type: Types.FULFILL,
   }
 }
 
-export const request = () => {
+export const request = (): IAction => {
   return {
     type: Types.REQUEST,
   }
 }
 
-export const success = (payload: IExampleState) => {
+export const success = (payload: IExampleState): IAction => {
   return {
     type: Types.SUCCESS,
     payload,

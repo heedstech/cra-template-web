@@ -1,5 +1,5 @@
 // React
-import React, { FC } from 'react'
+import { FC } from 'react'
 
 // Libraries
 import { Provider } from 'react-redux'
