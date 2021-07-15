@@ -2,7 +2,7 @@
 import { Route as TRoute } from 'lib/models'
 
 // React
-import React, { FC } from 'react'
+import { FC } from 'react'
 
 // Libraries
 import { Switch, BrowserRouter as Router, Route } from 'react-router-dom'
@@ -22,8 +22,9 @@ const RouterContainer: FC = () => {
                 exact
                 component={route.component}
                 path={route.path}
+                key={route.path}
               />
-            );
+            )
           }
           return (
             <Route
@@ -32,11 +33,11 @@ const RouterContainer: FC = () => {
               component={route.component}
               key={route.path}
             />
-          );
+          )
         })}
       </Switch>
     </Router>
-  );
-};
+  )
+}
 
 export default RouterContainer

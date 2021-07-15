@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 // Models
 import { Example } from '../models'
 
@@ -11,9 +12,13 @@ import reducer, { Types } from '../duck'
 
 describe('Example Sagas', () => {
   describe('Unit Tests', () => {
-    xit('', () => {})
+    xit('', () => {
+      // Test
+    })
   })
   describe('With Reducer', () => {
-    xit('', () => {})
+    xit('', () => {
+      // Test
+    })
   })
 })

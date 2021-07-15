@@ -17,7 +17,8 @@ First add this to your devDependencies in package.json:
   "eslint-plugin-prettier": "^3.4.0",
   "eslint-plugin-react": "^7.20.0",
   "prettier": "^2.2.1",
-  "husky": "^6.0.0"
+  "husky": "^6.0.0",
+  "redux-saga-test-plan": "^4.0.3"
 }
 ```
 
@@ -26,7 +27,8 @@ After this, add this husky config to your package.json:
 ```
   "husky": {
     "hooks": {
-      "pre-commit": "CI=true npm test"
+      "pre-commit": "yarn lint",
+      "pre-push": "CI=true yarn test"
     }
   }
 ```
