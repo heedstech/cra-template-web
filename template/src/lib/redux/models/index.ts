@@ -3,7 +3,7 @@ import { IExampleState } from 'storage/example/models'
 
 export interface IAction {
   type: string
-  payload?: unknown
+  payload?: any
 }
 
 export interface IBaseState {

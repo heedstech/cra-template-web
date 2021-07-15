@@ -1,13 +1,13 @@
-import { FC } from 'react'
+import React from 'react'
 import { Route, Redirect } from 'react-router-dom'
 
 interface Props {
   exact?: boolean
-  component: FC<unknown>
+  component: React.FunctionComponent
   path: string
 }
 
-const PrivateRoute: FC<Props> = ({ exact, component: Component, path }) => {
+const PrivateRoute = ({ exact, component: Component, path }: Props) => {
   const token = localStorage.getItem('access_token')
 
   const renderComponent = () => {

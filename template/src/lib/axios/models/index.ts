@@ -1,4 +1,4 @@
 export type PaginatedResponse = {
-  results: unknown[]
+  results: any[]
   next?: number
 }

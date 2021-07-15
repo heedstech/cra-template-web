@@ -1,6 +1,6 @@
 {
   "name": "cra-template-heeds-web",
-  "version": "1.0.6",
+  "version": "1.0.2",
   "description": "Heeds template for web applications for Create React App",
   "main": "template.json",
   "scripts": {
