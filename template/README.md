@@ -1,46 +1,47 @@
 # Project Created with Heeds Web Template.
 
-## Runing the Project
+<p>
+ <a href="#technologies">Technologies</a> •
+ <a href="#running">Running the Project</a> •
+ <a href="#contact">Contact</a>
+</p>
 
-First add this to your devDependencies in package.json:
+<h2 id="technologies">Techonologies</h2>
 
-```
-"devDependencies": {
-  "@types/react-router-dom": "^5.1.5",
-  "@typescript-eslint/eslint-plugin": "^3.3.0",
-  "@typescript-eslint/parser": "^3.3.0",
-  "@types/jest": "^25.1.4",
-  "@types/react-dom": "^16.9.8",
-  "@types/react-redux": "^7.1.9",
-  "@types/styled-components": "^5.1.9",
-  "eslint-config-prettier": "^6.11.0",
-  "eslint-plugin-prettier": "^3.4.0",
-  "eslint-plugin-react": "^7.20.0",
-  "prettier": "^2.2.1",
-  "husky": "^6.0.0",
-  "redux-saga-test-plan": "^4.0.3"
-}
-```
+The Heeds Template includes the following technologies:
 
-After this, add this husky config to your package.json:
+| Doc                     | Link                                                          |
+| ----------------------- | ------------------------------------------------------------- |
+| `Typescript`            | https://www.typescriptlang.org/                               |
+| `Redux`                 | https://redux.js.org/                                         |
+| `Redux Saga`            | https://redux-saga.js.org/                                    |
+| `Yup`                   | https://www.npmjs.com/package/yup                             |
+| `React Router Dom`      | https://reactrouter.com/web/guides/quick-start                |
+| `Axios`                 | https://www.npmjs.com/package/axios                           |
+| `JWT Decode`            | https://www.npmjs.com/package/jwt-decode                      |
+| `Styled Components`     | https://styled-components.com/                                |
+| `Husky`                 | https://www.npmjs.com/package/husky                           |
+| `React Icons`           | https://react-icons.github.io/react-icons/                    |
+| `Jest`                  | https://jestjs.io/                                            |
+| `testing-library/react` | https://testing-library.com/docs/react-testing-library/intro/ |
 
-```
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn lint",
-      "pre-push": "CI=true yarn test"
-    }
-  }
-```
+<h2 id="running">Running the Project</h2>
 
-Then run:
+On your terminal take the follwing steps:
+
+1. Run:
 
 ```
 yarn
 ```
 
-Now you just need to start the aplication.
+2. Now you just need to start the aplication.
 
 ```
 yarn start
 ```
+
+<h2 id="contact">Contact</h2>
+
+- Follow us on **[Linkedin](https://www.linkedin.com/company/heeds-technologies/)**
+- contact@heeds.tech
